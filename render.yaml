@@ -1,7 +1,7 @@
 services:
   - type: web
+    runtime: "docker"
     name: n8n
-    env: docker
     region: oregon # optional (defaults to oregon)
     plan: starter  # Other possible values: standard (defaults to starter)
     branch: main # optional (defaults to master)
@@ -29,6 +29,8 @@ services:
         fromDatabase:
           name: n8nDB
           property: password
+      - key: N8N_RUNNERS_ENABLED
+        value: "true"
     disk:
       name: n8nDisk
       mountPath: /home/node/.n8n
