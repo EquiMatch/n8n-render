@@ -44,7 +44,7 @@ services:
       - key: N8N_DIAGNOSTICS_CONFIG_BACKEND
         value: ""
       - key: N8N_HOST
-        value: "https://n8n-e7oi.onrender.com"
+        value: "n8n-e7oi.onrender.com"
 
     disk:
       name: n8nDisk
