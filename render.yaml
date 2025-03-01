@@ -45,6 +45,8 @@ services:
         value: ""
       - key: N8N_HOST
         value: "n8n-e7oi.onrender.com"
+      - key: N8N_PROTOCOL
+        value: "https"
 
     disk:
       name: n8nDisk
