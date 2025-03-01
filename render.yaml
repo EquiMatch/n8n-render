@@ -33,6 +33,17 @@ services:
         value: "true"
       - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
         value: "true"
+      - key: N8N_DIAGNOSTICS_ENABLED
+        value: "false"
+      - key: N8N_TEMPLATES_ENABLED
+        value: "false"
+      - key: EXTERNAL_FRONTEND_HOOKS_URLS
+        value: ""
+      - key: N8N_DIAGNOSTICS_CONFIG_FRONTEND
+        value: ""
+      - key: N8N_DIAGNOSTICS_CONFIG_BACKEND
+        value: ""
+
     disk:
       name: n8nDisk
       mountPath: /home/node/.n8n
